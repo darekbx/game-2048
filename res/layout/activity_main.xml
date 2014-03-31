@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.game2048.view.GameView
+        android:id="@+id/game_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="7dip">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+		        android:text="@string/score"
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+                style="@style/default_text" />
+		    <TextView
+		        android:id="@+id/score_text_view"
+		        android:layout_width="90dip"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:text="@string/empty"
+		        android:textAlignment="gravity"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        style="@style/default_text" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/moves"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                style="@style/default_text" />
+            <TextView
+                android:id="@+id/moves_text_view"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="@string/empty"
+                android:textAlignment="gravity"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/default_text" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                style="@style/default_text" />
+            <TextView
+                android:id="@+id/time_text_view"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="@string/empty"
+                android:textAlignment="gravity"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/default_text" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/best"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                style="@style/default_text" />
+            <TextView
+                android:id="@+id/best_text_view"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/default_text" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/all_moves"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                style="@style/default_text" />
+            <TextView
+                android:id="@+id/all_moves_text_view"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="@string/empty"
+                android:textAlignment="gravity"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/default_text" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/played"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                style="@style/default_text" />
+            <TextView
+                android:id="@+id/played_text_view"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/default_text" />
+        </TableRow>
+    </TableLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">2048</string>
+    <string name="score">Score: </string>
+    <string name="best">Best score: </string>
+    <string name="played">Times played: </string>
+    <string name="time">Time: </string>
+    <string name="moves">Moves: </string>
+    <string name="all_moves">All moves: </string>
+    <string name="time_format_s">%ss</string>
+    <string name="time_format_sm" formatted="false">%sm %ss</string>
+    <string name="game_over">GAME OVER</string>
+    <string name="empty">0</string>
+    <string name="best_score_key">best_score</string>
+    <string name="times_played_key">times_played</string>
+    <string name="moves_key">moves</string>
+</resources>
